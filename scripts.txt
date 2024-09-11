@@ -1,0 +1,22 @@
+Create Setup Scripts:
+
+Write scripts for setting up the VMs, MySQL, and Docker containers. For example:
+Example setup-vm.sh:
+
+bash
+Copy code
+#!/bin/bash
+# Script to set up a VM
+sudo apt update
+sudo apt install -y docker.io docker-compose
+Example setup-mysql.sh:
+
+bash
+Copy code
+#!/bin/bash
+# Script to set up MySQL
+sudo docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=yourpassword -e MYSQL_DATABASE=yourdb -p 3306:3306 -d mysql:latest
+
+
+frontend server ip: 3.85.35.109:8081
+Backend server ip: 3.93.21.56:3000
