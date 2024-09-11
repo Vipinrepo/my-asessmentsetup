@@ -1,0 +1,22 @@
+version: '3'
+services:
+  backend:
+    image: backend-image:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    environment:
+      - DATABASE_HOST=mysql
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=yourpassword
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: yourpassword
+      MYSQL_DATABASE: yourdb
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
