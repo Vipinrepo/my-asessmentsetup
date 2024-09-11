@@ -1,5 +1,5 @@
-Project Setup and Configuration
-Welcome to the My Project Setup repository! This project provides a comprehensive guide for deploying and configuring a front-end and back-end application with Docker, setting up MySQL, and configuring load balancers for high availability. Below is a detailed description of each component included in this repository.
+##Project Setup and Configuration
+##Welcome to the My Project Setup repository! This project provides a comprehensive guide for deploying and configuring a front-end and back-end application with Docker, setting up MySQL, and configuring load balancers for high availability. Below is a detailed description of each component included in this repository.
 
 Repository Structure
 docker-compose/
